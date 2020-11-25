@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  font-weight: normal;
+  src: url('https://fonts.gstatic.com/s/sourcecodepro/v11/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-weight: bold;
+  src: url('https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7Pqths7Ds-cq.woff2') format('woff2');
+}
+
+html {
+    height: 100%;
+}
+body {
+    background: url('bg.png') left 2% / cover, black;
+    font-family: 'Source Code Pro', serif;
+    color: white;
+}
+h1 {
+    font-size: inherit;
+    margin-top: 5em;
+}
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+input[type="text"] {
+    padding: 1ex;
+    border: none;
+    background: #ffffffaa;
+    border-bottom: 2px solid black;
+}
+button {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+.container {
+    padding: .5em 1em;
+    text-align: center;
+}
+#submit-buttons button {
+    display: block;
+    margin: .5em auto;
+    background: #44cc60;
+    padding: 5px;
+}
+#submit-buttons button.current {
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+}
+.presetText {
+    display: block;
+    font-size: 90%;
+}
+.container {
+    padding: 1em;
+    text-align: center;
+}
+#error {
+    display: flex;
+    background: crimson;
+    color: white;
+    height: 4em;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    text-align: center;
+}
+#error-text {
+    margin: auto 0;
+    padding: 0 2em;
+    flex: auto;
+}
+#hide-error {
+    font-size: 200%;
+    flex: 0 0 2em;
+    width: 2em;
+}
+#hide-error:focus, #hide-error:hover {
+    background: white;
+    color: crimson;
+}
+#spinner {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#submit-spinner {
+    display: none;
+}
